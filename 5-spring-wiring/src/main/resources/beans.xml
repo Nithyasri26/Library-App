@@ -1,0 +1,12 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:ctx="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+	<bean id="accservice" class="com.cg.AccountServiceImpl">
+	
+	<property name="accRepo" ref="savings"></property>
+	</bean>
+	<bean id="savings" class="com.cg.SavingsAccRepoImpl"></bean>
+	
+		</beans>
